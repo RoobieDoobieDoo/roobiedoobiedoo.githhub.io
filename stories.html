@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murphy's Law Website</title>
+    
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="flexbox.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barrio&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Neuton', serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: white;
+        }
+
+        header {
+            background: #040916;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h2 {
+            font-family: 'Barrio', cursive;
+            margin: 0;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Content Container */
+        .content-container {
+            display: flex;
+            flex-direction: row;
+            margin: 20px;
+        }
+
+        /* Left Content */
+        .content-left {
+            flex: 1;
+            padding: 20px;
+            background: #040916;
+            margin-right: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Right Content */
+        .content-right {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+			 background: #040916
+        }
+
+        .image-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Actions */
+        .actions {
+            margin-top: 20px;
+        }
+
+        .action-btn {
+            display: inline-block;
+            background: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .action-btn:hover {
+            background: #0056b3;
+        }
+
+        /* Bottom Section */
+        .bottom-section {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .graphic-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Stories Box */
+        .stories-box {
+            margin: 20px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #040916;
+            color: #fff;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+       
+        @media (max-width: 768px) {
+            .content-container {
+                flex-direction: column;
+            }
+
+            .content-left {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+    
+</head>
+
+<body>
+    <header>
+        <h2 class="barrio-regular">Murphy's Law</h2>
+        <img src="image-path-here.jpg" alt="Murphy's Law Image" class="main-image" />
+        <nav>
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="stories.html">Stories</a></li>
+                <li><a href="share.html">Share Your Story</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content-container d_flex">
+        <div class="content-left">
+            <h2>“Airport Apocalypse” Part 1</h2>
+            <p>On August 6th, I was scheduled to fly to Vilnius, Lithuania. I had two flights: one with Wizz Air from Yerevan, Armenia, to Rome, Italy, and the other from Rome to Vilnius. I had a three-hour layover in Rome, which gave me enough time to collect my luggage, check in again, drop off my bag, and do all the usual pre-flight procedures. When I arrived at Yerevan’s airport, I saw that my flight to Rome was delayed by two hours. I started panicking because I knew I wouldn’t be able to make my second flight. Not knowing what to do, I decided to contact my best friend from school who lives in Italy and ask if I could stay with her if I missed my second flight. Thankfully, she said yes. Since my flight was delayed by two hours and I hadn't received any notifications from Wizz Air, I assumed that check-in would still happen two hours before the flight. The original departure time was 2:55 AM, and it was delayed to 4:25 AM. I sat there waiting, while also checking if the flight from Rome to Vilnius had been delayed, hoping I might still be able to catch it. But when I saw there were no changes, I decided to change my flight to August 16th (paid additional 130€), flying out from Venice—the city where my friend lives—instead of Rome. I made the changes to my tickets and continued waiting.After sitting for a while, I decided to check the screen to see if check-in had opened. When I looked, I saw 'Est. Time 2:45' displayed, and I mistakenly thought it meant that check-in was estimated to begin at 2:45 AM. But I was wrong. It’s already around 3:10 AM, and I’m thinking there’s no way my check-in hasn’t opened yet. My friend and I decided to ask the airport staff where we could find the check-in for my flight. They checked and informed us that the check-in had already closed. Apparently, the ‘Est. Time 2:45’ meant that the check-in was closing at that time. I'm in shock—this has never happened to me before, so I have no idea what to do. I started asking random people around the airport for advice, and they all told me there was nothing I could do except contact the airline. To reach Wizz Air, I would need to call their Budapest office, but who would possibly be working at that hour, right? No one could help me. I approached three or four people, but no luck. I checked all the other flights, and they were all insanely expensive—700€ or more. Feeling desperate, I had one last hope and went to a random guy who worked at the airport. I was almost in tears as I asked him if there was any way I could still make my flight. Keep in mind, it was 40 minutes before departure, and I hadn't gone through passport control or security yet. I basically had no time left. The guy told me there was only one option: I could fly without my luggage. I called my mom, asking her what I should do, but she had no idea either. Then the guy said he wasn't 100% sure if he could let me go and that he needed to check. He took my passport and handled everything for me, telling me not to mention it to anyone because he wasn’t allowed to do such a thing. He also advised me to get a trolley so I could at least take some of my stuff, but I'd have to pay an extra 70-100€ for it. I thought, 'Screw it,' because I'd already paid for my second flight, and I couldn't afford to miss that one too, especially since it was only 10 days away. So, I bought the trolley—a small bag that held about 10kg. I was already crying at that point. Meanwhile, my backpack had torn into two parts, and barely made to my gate while losing my passport and wallet. I went for the final boarding pass check, and to my surprise, they didn’t even notice my extra bag, so I didn’t have to pay for it. And just like that, there I was, flying to Italy, staying with my classmate.</p>
+            
+            <div class="actions">
+                <a href="share.html" class="action-btn">Submit Story</a>
+                <a href="https://www.wonderopolis.org/wonder/what-is-murphys-law/quiz" class="action-btn">Take a Quiz</a>
+            </div>
+        </div>
+
+        <div class="content-right">
+            <div class="image-box">
+                <img src="plane.jpg" alt="Descriptive Alt Text" />
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>© 2024 Murphy's Law</p>
+        <p>Connect with us:</p>
+        <ul>
+            <li><a href="https://www.facebook.com/ruby.avetisyan">Facebook</a></li>
+            <li><a href="https://www.instagram.com/lovecommaroobie/">Instagram</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murphy's Law Website</title>
+    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barrio&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #fff; 
+            margin: 0;
+            font-family: 'Neuton', serif; 
+        }
+
+        .video-box {
+            background-color: #040916; 
+            padding: 20px; 
+            border-radius: 8px; 
+            margin: 20px auto; 
+            width: 80%; 
+            max-width: 900px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+        }
+
+        .video-title {
+            color: white;
+            text-align: center;
+            margin-bottom: 15px; 
+        }
+
+        .container {
+            display: flex; 
+            justify-content: space-between; 
+            flex-wrap: wrap; 
+            padding: 20px;
+        }
+
+        .column {
+            flex: 1; 
+            margin: 10px; 
+            min-width: 300px; 
+        }
+
+        iframe {
+            width: 100%; 
+            height: 315px; 
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #040916;
+            color: white; 
+        }
+
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2 class="barrio-regular">Murphy's Law</h2>
+        <img src="image-path-here.jpg" alt="Murphy's Law Image" class="main-image" />
+        <nav>
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="stories.html">Stories</a></li>
+                <li><a href="share.html">Share Your Story</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="video-box">
+        <h2 class="video-title">Fight with the Skates</h2>
+        <div class="container">
+            <div class="column">
+                <iframe src="https://www.youtube.com/embed/rOXr_qX-jds?si=ErBo-vcQeisUUNQR" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="column">
+                <iframe src="https://www.youtube.com/embed/mxoYbX_fiek?si=SRwdO7HUO4sJ9MJZ" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    
+    <div class="video-box">
+        <h2 class="video-title">Fight with the Pond</h2>
+        <div class="container">
+            <div class="column">
+                <iframe src="https://youtube.com/embed/2taZW19pJtI?si=uQBYtUaOw6fiogVa" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="column">
+                <iframe src="https://youtube.com/embed/P7uNG7ntNgw?si=pbIZ1T7ZqPc8mmRl" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Murphy's Law</p>
+        <p>Connect with us:</p>
+        <ul>
+            <li><a href="https://www.facebook.com/ruby.avetisyan">Facebook</a></li>
+            <li><a href="https://www.instagram.com/lovecommaroobie/">Instagram</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
